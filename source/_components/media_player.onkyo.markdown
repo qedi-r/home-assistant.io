@@ -24,8 +24,18 @@ media_player:
 ```
 
 A few notes:
+Source selection can be used in scenes or by way of service calls.
 
-Source selection has no front-end UI, but can be controlled by way of service calls. Select the source string from the following list:
+```yaml
+scenes:
+  name: turn_onkyo_to_tv
+    media.player.txnr525_00000000
+      state: on
+      source: tv
+    
+```
+
+Select the source string from the following list:
 
 - video1
 - video2
